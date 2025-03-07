@@ -95,8 +95,8 @@ nav ul li a:focus {
 /* Cambiar color al pasar el cursor en submenú */
 
 .submenu a:hover {
-    background: #FBDE00;
-    border-radius: 5px;
+    color: #FBDE00;
+    /* Amarillo */
 }
 
 
