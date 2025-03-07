@@ -62,10 +62,8 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a:focus {
-    background: #FBDE00;
-    /* Color amarillo */
-    color: black;
-    border-radius: 5px;
+    color: #FBDE00;
+    /* Amarillo */
 }
 
 
