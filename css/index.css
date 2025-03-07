@@ -11,7 +11,7 @@ body {
 header {
     background: #0E3233;
     /* Fondo del header */
-    padding: 10px;
+    padding: 10px 0;
 }
 
 
@@ -22,11 +22,27 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Centrar elementos */
 }
+
+
+/* Estilos del logo */
+
+.logo img {
+    width: 50px;
+    /* Reducir tamaño del logo */
+    height: auto;
+    margin-right: 20px;
+}
+
+
+/* Espaciado para los elementos de la lista */
 
 nav ul li {
     position: relative;
-    margin-right: 20px;
+    margin: 0 15px;
 }
 
 
