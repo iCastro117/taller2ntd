@@ -10,66 +10,73 @@ body {
 
 header {
     background: #0E3233;
-    /* Fondo del header */
-    padding: 10px 0;
-}
-
-
-/* Estilos de navegación */
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 10px 50px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    /* Centrar elementos */
-    margin-left: 200px;
-    /* Mueve el menú a la derecha */
+    justify-content: space-between;
 }
 
-.logo {
-    margin-left: -500px;
-    /* Mueve el logo 50px desde la izquierda */
+
+/* Contenedor de navegación */
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
 
 /* Estilos del logo */
 
+.logo {
+    flex-shrink: 0;
+    /* Evita que el logo cambie de tamaño */
+}
+
 .logo img {
     width: 70px;
-    /* Reducir tamaño del logo */
     height: auto;
-    margin-right: 20px;
 }
 
 
-/* Espaciado para los elementos de la lista */
+/* Estilos de navegación */
 
-nav ul li {
-    margin: 0 15px;
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 300px;
+    /* Empuja el menú a la derecha */
+}
+
+
+/* Espaciado para los elementos del menú */
+
+.nav-menu li {
+    margin: 0 20px;
+    position: relative;
 }
 
 
 /* Estilos de los enlaces */
 
-nav ul li a {
+.nav-menu li a {
     text-decoration: none;
-    color: #FFFFFF;
-    /* Color blanco */
+    color: #FBDE00;
     padding: 10px;
+    transition: color 0.3s ease;
     display: block;
-    transition: background 0.3s ease;
+    /* Aquí estaba el error */
 }
 
 
-/* Cambiar color al pasar el cursor o seleccionar */
+/* Cambiar color al pasar el cursor */
 
-nav ul li a:hover,
-nav ul li a:focus {
-    color: #FBDE00;
-    /* Amarillo */
+.nav-menu li>a:hover {
+    color: #FFFFFF;
+    /* Blanco */
 }
 
 
@@ -77,37 +84,39 @@ nav ul li a:focus {
 
 .submenu {
     position: absolute;
-    top: 100%;
+    top: 40px;
     left: 0;
-    background: white;
+    background: #FFFFFF;
+    ;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     display: none;
     flex-direction: column;
     padding: 10px;
+    min-width: 150px;
 }
 
 
 /* Estilo de los enlaces en el submenú */
 
 .submenu a {
-    color: black;
-    padding: 8px 15px;
-    white-space: nowrap;
-    transition: background 0.3s ease;
+    color: #0E3233 !important;
+    /* Negro */
+    /* Negro */
 }
 
 
 /* Cambiar color al pasar el cursor en submenú */
 
 .submenu a:hover {
-    color: #FBDE00;
+    color: #FBDE00 !important;
+    /* Amarillo */
     /* Amarillo */
 }
 
 
 /* Mostrar submenú al pasar el cursor */
 
-nav ul li:hover .submenu {
+.nav-menu li:hover .submenu {
     display: flex;
 }
