@@ -25,13 +25,20 @@ nav ul {
     align-items: center;
     justify-content: center;
     /* Centrar elementos */
+    margin-left: 200px;
+    /* Mueve el menú a la derecha */
+}
+
+.logo {
+    margin-left: -500px;
+    /* Mueve el logo 50px desde la izquierda */
 }
 
 
 /* Estilos del logo */
 
 .logo img {
-    width: 50px;
+    width: 70px;
     /* Reducir tamaño del logo */
     height: auto;
     margin-right: 20px;
@@ -41,7 +48,6 @@ nav ul {
 /* Espaciado para los elementos de la lista */
 
 nav ul li {
-    position: relative;
     margin: 0 15px;
 }
 
