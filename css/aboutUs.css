@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.header {
+    background-color: #0e5e5c;
+    color: #ffd700;
+    padding: 30px 0;
+    text-align: center;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.paw-print {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    opacity: 0.7;
+}
+
+.content {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.image-container {
+    flex: 0 0 40%;
+    position: relative;
+}
+
+.yellow-blob {
+    background-color: #ffd700;
+    width: 100%;
+    height: 100%;
+    border-radius: 70% 30% 50% 40%;
+    position: relative;
+}
+
+.dog-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.85;
+}
+
+.text-content {
+    flex: 0 0 60%;
+    padding-left: 40px;
+}
+
+.text-content h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.text-content h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #ffd700;
+    border-radius: 50%;
+}
+
+.text-content p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.signature {
+    margin-top: 30px;
+    font-style: italic;
+    color: #333;
+}
+
+.founder-name {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+    
+    .image-container {
+        margin-bottom: 30px;
+        height: 300px;
+    }
+    
+    .text-content {
+        padding-left: 0;
+    }
+}
