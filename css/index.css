@@ -1,12 +1,48 @@
-/* Estilos generales */
-
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background: url('../assets/BACKGROUND.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #FFFFFF;
+    /* Texto en color blanco para mayor contraste */
 }
 
 
-/* Estilo del header */
+/*Letra inicio 1 */
+
+.welcome {
+    margin-left: 30px;
+    /* Mueve todo el bloque */
+    margin-top: 100px;
+}
+
+.welcome h1 {
+    font-size: 150%;
+    margin-left: 30px;
+}
+
+.welcome h2 {
+    font-size: 350%;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    /* Mueve "Friendly" abajo */
+}
+
+.welcome p {
+    font-size: 90%;
+    margin-left: 30px;
+    max-width: 400px;
+    /* Reduce el ancho para que el texto se divida en más líneas */
+    line-height: 1.5;
+    /* Mejora la legibilidad */
+}
+
+
+/*FIN Letra inicio 1 */
+
+
+/*Comienza HEADER* */
 
 header {
     background: #0E3233;
@@ -16,30 +52,20 @@ header {
     justify-content: space-between;
 }
 
-
-/* Contenedor de navegación */
-
 nav {
     display: flex;
     align-items: center;
     width: 100%;
 }
 
-
-/* Estilos del logo */
-
 .logo {
     flex-shrink: 0;
-    /* Evita que el logo cambie de tamaño */
 }
 
 .logo img {
     width: 70px;
     height: auto;
 }
-
-
-/* Estilos de navegación */
 
 .nav-menu {
     list-style: none;
@@ -48,19 +74,12 @@ nav {
     display: flex;
     align-items: center;
     margin-left: 300px;
-    /* Empuja el menú a la derecha */
 }
-
-
-/* Espaciado para los elementos del menú */
 
 .nav-menu li {
     margin: 0 20px;
     position: relative;
 }
-
-
-/* Estilos de los enlaces */
 
 .nav-menu li a {
     text-decoration: none;
@@ -68,19 +87,11 @@ nav {
     padding: 10px;
     transition: color 0.3s ease;
     display: block;
-    /* Aquí estaba el error */
 }
-
-
-/* Cambiar color al pasar el cursor */
 
 .nav-menu li>a:hover {
     color: #FFFFFF;
-    /* Blanco */
 }
-
-
-/* Submenú */
 
 .submenu {
     position: absolute;
@@ -96,27 +107,65 @@ nav {
     min-width: 150px;
 }
 
-
-/* Estilo de los enlaces en el submenú */
-
 .submenu a {
     color: #0E3233 !important;
-    /* Negro */
-    /* Negro */
 }
-
-
-/* Cambiar color al pasar el cursor en submenú */
 
 .submenu a:hover {
     color: #FBDE00 !important;
-    /* Amarillo */
-    /* Amarillo */
 }
-
-
-/* Mostrar submenú al pasar el cursor */
 
 .nav-menu li:hover .submenu {
     display: flex;
 }
+
+
+/*Fin HEADER* */
+
+
+/*Boton READ MORE */
+
+.read-more {
+    color: #FFFFFF;
+    /* Letra blanca */
+    background-color: #0E3233;
+    /* Color de fondo */
+    padding: 10px 20px;
+    /* Espaciado interno */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    text-decoration: none;
+    /* Quita el subrayado */
+    display: inline-block;
+    /* Permite ajustar el tamaño del botón */
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+    /* Sombra */
+    transition: background 0.3s ease, transform 0.2s ease;
+    /* Efecto suave */
+    margin-left: 30px;
+}
+
+.read-more:hover {
+    background-color: #FBDE00;
+    /* Cambio de color al pasar el cursor */
+    color: #0E3233;
+    /* Cambio de color del texto */
+    transform: scale(1.05);
+    /* Pequeño efecto de agrandamiento */
+}
+
+
+/*FIN Boton READ MORE */
+
+
+/*Imagen perro y gato */
+
+.image-container {
+    margin-left: 670px;
+    /* Mueve la imagen a la derecha */
+    margin-top: -400px;
+    /* Ajusta la posición vertical si es necesario */
+}
+
+
+/*FIN Imagen perro y gato */
