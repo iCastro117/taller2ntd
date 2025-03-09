@@ -1,0 +1,322 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+/* Header y navegación */
+header {
+    background-color: #0e3d3c;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu a {
+    color: #ffd700;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #ffffff;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #0e3d3c;
+    padding: 1rem;
+    min-width: 200px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 100;
+}
+
+.nav-menu li:hover .submenu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Contenido principal */
+.main-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Sección de categorías de entrenamiento */
+.training-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.category-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.category-card h3 {
+    color: #0e3d3c;
+    margin-bottom: 1rem;
+}
+
+/* Sección de productos */
+.products-section {
+    margin-bottom: 4rem;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.product-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.product-card img {
+    width: 150px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.stars {
+    color: #ffd700;
+    margin: 0.5rem 0;
+}
+
+.price {
+    color: #0e3d3c;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Sección de planes */
+.service-plans {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.plan-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.plan-price {
+    font-size: 2rem;
+    color: #0e3d3c;
+    margin: 1rem 0;
+}
+
+.benefits-list {
+    list-style: none;
+    margin: 1.5rem 0;
+    text-align: left;
+}
+
+.benefits-list li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.benefits-list li::before {
+    content: "✓";
+    color: #0e3d3c;
+    position: absolute;
+    left: 0;
+}
+
+.read-more {
+    background-color: #0e3d3c;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #0a2e2d;
+}
+
+/* Títulos de sección */
+.section-title {
+    color: #0e3d3c;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    animation: modalFadeIn 0.3s ease-in-out;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #0e3d3c;
+    background: none;
+    border: none;
+    transition: color 0.3s;
+}
+
+.close-modal:hover {
+    color: #000;
+}
+
+.modal-title {
+    color: #0e3d3c;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #ffd700;
+}
+
+.modal-price {
+    font-size: 2rem;
+    color: #0e3d3c;
+    margin: 1rem 0;
+}
+
+.modal-description {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.modal-benefits {
+    margin-bottom: 1.5rem;
+}
+
+.modal-benefits h4 {
+    margin-bottom: 0.5rem;
+    color: #0e3d3c;
+}
+
+.modal-benefits ul {
+    list-style: none;
+}
+
+.modal-benefits li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.modal-benefits li::before {
+    content: "✓";
+    color: #0e3d3c;
+    position: absolute;
+    left: 0;
+}
+
+.modal-cta {
+    background-color: #0e3d3c;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 0 auto;
+}
+
+.modal-cta:hover {
+    background-color: #0a2e2d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+    
+    .main-content {
+        margin: 1rem auto;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .modal-content {
+        width: 95%;
+        padding: 1.5rem;
+    }
+}

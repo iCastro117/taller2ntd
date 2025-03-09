@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Deepuppy</title>
+    <link rel="stylesheet" href="servicios.css">
+    <link rel="stylesheet" href="../../css/servicios.css">
+</head>
+<body>
+    <header>
+        <img src="../../assets/logo.png" alt="Deepuppy Logo" class="logo">
+        <ul class="nav-menu">
+            <li><a href="../../index.html">Inicio</a></li>
+            <li>
+                <a href="#">About Us</a>
+                <div class="submenu">
+                    <a href="aboutUs.html">About Us</a>
+                    <a href="equipo.html">Equipo</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">Conclusiones</a>
+                <div class="submenu">
+                    <a href="conclusionesSalim.html">Conclusiones Salim</a>
+                    <a href="conclusionesMauricio.html">Conclusiones Mauricio</a>
+                    <a href="conclusionesIsabella.html">Conclusiones Isabella</a>
+                </div>
+            </li>
+            <li><a href="servicios.html">Services</a></li>
+            <li><a href="FQAs.html">QA</a></li>
+        </ul>
+    </header>
+
+    <main class="main-content">
+        <!-- Sección de Categorías de Entrenamiento -->
+        <h2 class="section-title">Categorías de Entrenamiento</h2>
+        <div class="training-categories">
+            <div class="category-card">
+                <h3>Observación</h3>
+                <p>Evaluación inicial detallada del comportamiento de tu mascota en su entorno natural.</p>
+            </div>
+            <div class="category-card">
+                <h3>Análisis del Comportamiento</h3>
+                <p>Estudio profundo de patrones de conducta y necesidades específicas.</p>
+            </div>
+            <div class="category-card">
+                <h3>Introducción</h3>
+                <p>Primeros pasos en el proceso de entrenamiento y familiarización.</p>
+            </div>
+            <div class="category-card">
+                <h3>Módulos de Entrenamiento</h3>
+                <p>Programas específicos adaptados a las necesidades de cada mascota.</p>
+            </div>
+            <div class="category-card">
+                <h3>Implementación</h3>
+                <p>Aplicación práctica de técnicas y métodos de entrenamiento.</p>
+            </div>
+            <div class="category-card">
+                <h3>Control y Evaluación</h3>
+                <p>Seguimiento continuo del progreso y ajustes necesarios.</p>
+            </div>
+        </div>
+
+        <!-- Sección de Productos -->
+        <h2 class="section-title">Alimentación para Mascotas</h2>
+        <div class="products-section">
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="../../assets/servicios/comidaGato.jpg" alt="Comida para Gatos">
+                    <h3>Premium Cat Food</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="price">$45.99</p>
+                </div>
+                <div class="product-card">
+                    <img src="../../assets/servicios/comidaPerro.jpg" alt="Comida para Perros">
+                    <h3>Premium Dog Food</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="price">$52.99</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Sección de Planes -->
+        <h2 class="section-title">Planes de Servicio</h2>
+        <div class="service-plans">
+            <div class="plan-card">
+                <h3>Plan Básico</h3>
+                <p class="plan-price">$129</p>
+                <ul class="benefits-list">
+                    <li>2 Sesiones de entrenamiento</li>
+                    <li>Evaluación inicial</li>
+                    <li>Material de apoyo</li>
+                    <li>Seguimiento básico</li>
+                </ul>
+                <button class="read-more" data-modal="modal-basic">Read More</button>
+            </div>
+            <div class="plan-card">
+                <h3>Plan Intermedio</h3>
+                <p class="plan-price">$129</p>
+                <ul class="benefits-list">
+                    <li>2 Sesiones de entrenamiento</li>
+                    <li>Evaluación detallada</li>
+                    <li>Material personalizado</li>
+                    <li>Seguimiento semanal</li>
+                </ul>
+                <button class="read-more" data-modal="modal-intermediate">Read More</button>
+            </div>
+            <div class="plan-card">
+                <h3>Plan Premium</h3>
+                <p class="plan-price">$129</p>
+                <ul class="benefits-list">
+                    <li>2 Sesiones de entrenamiento</li>
+                    <li>Evaluación completa</li>
+                    <li>Material premium</li>
+                    <li>Seguimiento diario</li>
+                </ul>
+                <button class="read-more" data-modal="modal-premium">Read More</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modales para cada plan -->
+    <div id="modal-basic" class="modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h2 class="modal-title">Plan Básico</h2>
+            <p class="modal-price">$129</p>
+            <div class="modal-description">
+                <p>Nuestro Plan Básico es perfecto para quienes comienzan el entrenamiento de su mascota. Incluye dos sesiones de entrenamiento personalizadas con nuestros expertos, donde estableceremos las bases para un comportamiento adecuado.</p>
+                <p>Este plan es ideal para corregir problemas de comportamiento simples o iniciar el entrenamiento de cachorros.</p>
+            </div>
+            <div class="modal-benefits">
+                <h4>Beneficios incluidos:</h4>
+                <ul>
+                    <li>2 Sesiones de entrenamiento de 45 minutos</li>
+                    <li>Evaluación inicial del comportamiento</li>
+                    <li>Material de apoyo digital</li>
+                    <li>Seguimiento básico por correo electrónico</li>
+                    <li>Consejos personalizados para continuar en casa</li>
+                    <li>Certificado de participación</li>
+                </ul>
+            </div>
+            <button class="modal-cta">Contratar Plan</button>
+        </div>
+    </div>
+
+    <div id="modal-intermediate" class="modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h2 class="modal-title">Plan Intermedio</h2>
+            <p class="modal-price">$129</p>
+            <div class="modal-description">
+                <p>El Plan Intermedio está diseñado para mascotas que necesitan un enfoque más detallado en su entrenamiento. Incluye dos sesiones intensivas con nuestros entrenadores certificados, quienes trabajarán en problemas específicos de comportamiento.</p>
+                <p>Recomendado para mascotas con problemas moderados de comportamiento o para reforzar entrenamientos previos.</p>
+            </div>
+            <div class="modal-benefits">
+                <h4>Beneficios incluidos:</h4>
+                <ul>
+                    <li>2 Sesiones de entrenamiento de 60 minutos</li>
+                    <li>Evaluación detallada con informe escrito</li>
+                    <li>Material personalizado impreso y digital</li>
+                    <li>Seguimiento semanal durante un mes</li>
+                    <li>Consultas ilimitadas por WhatsApp</li>
+                    <li>10% de descuento en productos de la tienda</li>
+                    <li>Certificado de entrenamiento</li>
+                </ul>
+            </div>
+            <button class="modal-cta">Contratar Plan</button>
+        </div>
+    </div>
+
+    <div id="modal-premium" class="modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h2 class="modal-title">Plan Premium</h2>
+            <p class="modal-price">$129</p>
+            <div class="modal-description">
+                <p>Nuestro Plan Premium ofrece la experiencia más completa de entrenamiento para tu mascota. Con dos sesiones exclusivas con nuestros entrenadores senior, abordaremos cualquier problema de comportamiento y estableceremos rutinas efectivas.</p>
+                <p>Ideal para casos complejos o para quienes buscan la máxima atención y resultados garantizados.</p>
+            </div>
+            <div class="modal-benefits">
+                <h4>Beneficios incluidos:</h4>
+                <ul>
+                    <li>2 Sesiones de entrenamiento de 75 minutos</li>
+                    <li>Evaluación completa con plan personalizado</li>
+                    <li>Kit premium de materiales y herramientas</li>
+                    <li>Seguimiento diario durante dos semanas</li>
+                    <li>Acceso a videollamadas de emergencia</li>
+                    <li>15% de descuento en productos y servicios</li>
+                    <li>Sesión adicional de refuerzo (válida por 3 meses)</li>
+                    <li>Certificado premium de entrenamiento</li>
+                </ul>
+            </div>
+            <button class="modal-cta">Contratar Plan</button>
+        </div>
+    </div>
+
+    <script>
+        // Obtener todos los botones "Read More"
+        const readMoreButtons = document.querySelectorAll('.read-more');
+        
+        // Obtener todos los modales
+        const modals = document.querySelectorAll('.modal');
+        
+        // Obtener todos los botones de cierre
+        const closeButtons = document.querySelectorAll('.close-modal');
+        
+        // Función para abrir el modal
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden'; // Evitar scroll en el fondo
+        }
+        
+        // Función para cerrar el modal
+        function closeModal() {
+            modals.forEach(modal => {
+                modal.style.display = 'none';
+            });
+            document.body.style.overflow = 'auto'; // Restaurar scroll
+        }
+        
+        // Asignar evento click a los botones "Read More"
+        readMoreButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const modalId = this.getAttribute('data-modal');
+                openModal(modalId);
+            });
+        });
+        
+        // Asignar evento click a los botones de cierre
+        closeButtons.forEach(button => {
+            button.addEventListener('click', closeModal);
+        });
+        
+        // Cerrar el modal al hacer clic fuera del contenido
+        modals.forEach(modal => {
+            modal.addEventListener('click', function(event) {
+                if (event.target === this) {
+                    closeModal();
+                }
+            });
+        });
+        
+        // Cerrar el modal con la tecla Escape
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
