@@ -6,17 +6,31 @@
     font-family: 'Arial', sans-serif;
 }
 
+:root {
+    --primary-dark: #0E3233;
+    --primary: #1A5D5F;
+    --primary-light: #30686A;
+    --accent: #FAEB3E;
+    --accent-light: #FBDE00;
+    --white: #ffffff;
+    --text-dark: #333333;
+    --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 body {
-    background-color: #f5f5f5;
+    background: var(--primary);
+    color: var(--text-dark);
+    line-height: 1.6;
 }
 
 /* Header y navegación */
 header {
-    background-color: #0e3d3c;
+    background-color: var(--primary-dark);
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: var(--shadow);
 }
 
 .logo {
@@ -35,24 +49,20 @@ header {
 }
 
 .nav-menu a {
-    color: #ffd700;
+    color: var(--accent-light);
     text-decoration: none;
     font-size: 1.1rem;
-    transition: color 0.3s;
-}
-
-.nav-menu a:hover {
-    color: #ffffff;
+    font-weight: 500;
 }
 
 .submenu {
     display: none;
     position: absolute;
-    background-color: #0e3d3c;
+    background-color: var(--primary-dark);
     padding: 1rem;
     min-width: 200px;
     border-radius: 4px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: var(--shadow);
     z-index: 100;
 }
 
@@ -66,7 +76,16 @@ header {
 .main-content {
     max-width: 1200px;
     margin: 2rem auto;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
+}
+
+/* Títulos de sección */
+.section-title {
+    color: var(--accent);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 700;
 }
 
 /* Sección de categorías de entrenamiento */
@@ -78,15 +97,20 @@ header {
 }
 
 .category-card {
-    background-color: white;
-    padding: 1.5rem;
+    background-color: var(--white);
+    padding: 1.8rem;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: var(--shadow);
+    color: var(--text-dark);
 }
 
 .category-card h3 {
-    color: #0e3d3c;
+    color: var(--primary-dark);
     margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-bottom: 2px solid var(--accent-light);
+    padding-bottom: 0.5rem;
 }
 
 /* Sección de productos */
@@ -101,29 +125,34 @@ header {
 }
 
 .product-card {
-    background-color: white;
-    padding: 1.5rem;
+    background-color: var(--white);
+    padding: 1.8rem;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: var(--shadow);
     text-align: center;
+    color: var(--text-dark);
+}
+
+.product-card h3 {
+    color: var(--primary-dark);
+    margin: 1rem 0;
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 .product-card img {
     width: 150px;
     height: 250px;
     object-fit: cover;
+    border-radius: 6px;
     margin-bottom: 1rem;
 }
 
-.stars {
-    color: #ffd700;
-    margin: 0.5rem 0;
-}
-
 .price {
-    color: #0e3d3c;
-    font-size: 1.25rem;
-    font-weight: bold;
+    color: var(--primary-dark);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
 }
 
 /* Sección de planes */
@@ -134,17 +163,27 @@ header {
 }
 
 .plan-card {
-    background-color: white;
+    background-color: var(--white);
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: var(--shadow);
     text-align: center;
+    color: var(--text-dark);
+    border-top: 4px solid var(--accent-light);
+}
+
+.plan-card h3 {
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .plan-price {
-    font-size: 2rem;
-    color: #0e3d3c;
+    font-size: 2.2rem;
+    color: var(--primary-dark);
     margin: 1rem 0;
+    font-weight: 700;
 }
 
 .benefits-list {
@@ -154,38 +193,27 @@ header {
 }
 
 .benefits-list li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.7rem;
     padding-left: 1.5rem;
     position: relative;
 }
 
 .benefits-list li::before {
     content: "✓";
-    color: #0e3d3c;
+    color: var(--primary);
     position: absolute;
     left: 0;
 }
 
 .read-more {
-    background-color: #0e3d3c;
-    color: white;
+    background-color: var(--accent-light);
+    color: var(--primary-dark);
     border: none;
-    padding: 0.75rem 1.5rem;
+    padding: 0.8rem 1.8rem;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.read-more:hover {
-    background-color: #0a2e2d;
-}
-
-/* Títulos de sección */
-.section-title {
-    color: #0e3d3c;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 /* Estilos para el modal */
@@ -196,62 +224,50 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(14, 50, 51, 0.8);
     z-index: 1000;
     justify-content: center;
     align-items: center;
 }
 
 .modal-content {
-    background-color: white;
-    padding: 2rem;
+    background-color: var(--white);
+    padding: 2.5rem;
     border-radius: 8px;
     max-width: 600px;
     width: 90%;
     max-height: 80vh;
     overflow-y: auto;
     position: relative;
-    animation: modalFadeIn 0.3s ease-in-out;
-}
-
-@keyframes modalFadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    color: var(--text-dark);
+    box-shadow: var(--shadow);
 }
 
 .close-modal {
     position: absolute;
-    top: 10px;
-    right: 15px;
+    top: 15px;
+    right: 20px;
     font-size: 1.5rem;
     cursor: pointer;
-    color: #0e3d3c;
+    color: var(--primary-dark);
     background: none;
     border: none;
-    transition: color 0.3s;
-}
-
-.close-modal:hover {
-    color: #000;
 }
 
 .modal-title {
-    color: #0e3d3c;
+    color: var(--primary-dark);
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid #ffd700;
+    border-bottom: 2px solid var(--accent-light);
+    font-size: 1.8rem;
+    font-weight: 700;
 }
 
 .modal-price {
-    font-size: 2rem;
-    color: #0e3d3c;
+    font-size: 2.2rem;
+    color: var(--primary-dark);
     margin: 1rem 0;
+    font-weight: 700;
 }
 
 .modal-description {
@@ -259,13 +275,22 @@ header {
     line-height: 1.6;
 }
 
+.modal-description p {
+    margin-bottom: 1rem;
+}
+
 .modal-benefits {
     margin-bottom: 1.5rem;
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 6px;
 }
 
 .modal-benefits h4 {
-    margin-bottom: 0.5rem;
-    color: #0e3d3c;
+    margin-bottom: 1rem;
+    color: var(--primary-dark);
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .modal-benefits ul {
@@ -273,32 +298,16 @@ header {
 }
 
 .modal-benefits li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.7rem;
     padding-left: 1.5rem;
     position: relative;
 }
 
 .modal-benefits li::before {
     content: "✓";
-    color: #0e3d3c;
+    color: var(--primary);
     position: absolute;
     left: 0;
-}
-
-.modal-cta {
-    background-color: #0e3d3c;
-    color: white;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    display: block;
-    margin: 0 auto;
-}
-
-.modal-cta:hover {
-    background-color: #0a2e2d;
 }
 
 /* Responsive */
@@ -308,15 +317,31 @@ header {
     }
     
     .main-content {
-        margin: 1rem auto;
+        margin: 1.5rem auto;
     }
     
     .section-title {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     
     .modal-content {
         width: 95%;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.6rem;
+    }
+    
+    .category-card, 
+    .product-card, 
+    .plan-card {
+        padding: 1.5rem;
+    }
+    
+    .modal-content {
         padding: 1.5rem;
     }
 }
