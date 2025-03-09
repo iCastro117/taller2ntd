@@ -6,7 +6,9 @@
 }
 
 body {
-    background-color: #f5f5f5;
+    background: url('../../assets/BACKGROUND.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #FFFFFF; /* Texto en color blanco para mayor contraste */
 }
 
 header {
@@ -128,14 +130,14 @@ header h1 {
 }
 
 .text-content h2 {
-    color: #333;
+    color: #FBDE00; /* Cambiar el color del texto */
     font-size: 1.8rem;
     margin-bottom: 20px;
     position: relative;
 }
 
 .text-content p {
-    color: #555;
+    color: #FFFFFF; /* Cambiar el color del texto */
     line-height: 1.6;
     margin-bottom: 15px;
 }
@@ -143,12 +145,13 @@ header h1 {
 .signature {
     margin-top: 30px;
     font-style: italic;
-    color: #333;
+    color: #FBDE00; /* Cambiar el color del texto */
 }
 
 .founder-name {
     font-weight: bold;
     margin-top: 5px;
+    color: #FBDE00; /* Cambiar el color del texto */
 }
 
 @media (max-width: 768px) {
@@ -175,5 +178,6 @@ header h1 {
 
 .center-title {
     text-align: center;
-    margin-top: 20px
+    margin-top: 20px; /* Add margin to separate from the top */
+    color: #FBDE00; /* Cambiar el color del texto */
 }
