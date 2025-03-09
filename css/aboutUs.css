@@ -9,27 +9,85 @@ body {
     background-color: #f5f5f5;
 }
 
-.header {
-    background-color: #0e5e5c;
-    color: #ffd700;
-    padding: 30px 0;
-    text-align: center;
+header {
+    background: #0E3233;
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 300px;
+}
+
+.nav-menu li {
+    margin: 0 20px;
     position: relative;
 }
 
-.header h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
+.nav-menu li a {
+    text-decoration: none;
+    color: #FBDE00;
+    padding: 10px;
+    transition: color 0.3s ease;
+    display: block;
 }
 
-.paw-print {
+.nav-menu li>a:hover {
+    color: #FFFFFF;
+}
+
+.submenu {
     position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    opacity: 0.7;
+    top: 40px;
+    left: 0;
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+    min-width: 150px;
+    z-index: 1000; /* Ensure submenu is above other content */
+}
+
+.submenu a {
+    color: #0E3233 !important;
+}
+
+.submenu a:hover {
+    color: #FBDE00 !important;
+}
+
+.nav-menu li:hover .submenu {
+    display: flex;
+}
+
+header h1 {
+    color: #FBDE00;
+    font-size: 2.5rem;
+    margin-top: 10px;
 }
 
 .content {
@@ -45,7 +103,7 @@ body {
 }
 
 .yellow-blob {
-    background-color: #ffd700;
+    background-color: #FAEB3E;
     width: 100%;
     height: 100%;
     border-radius: 70% 30% 50% 40%;
@@ -59,7 +117,9 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.85;
+    opacity: 0.90;
+    border-radius: 15px; /* Make corners rounded */
+    overflow: hidden; /* Ensure content respects border radius */
 }
 
 .text-content {
@@ -72,19 +132,6 @@ body {
     font-size: 1.8rem;
     margin-bottom: 20px;
     position: relative;
-    padding-left: 30px;
-}
-
-.text-content h2::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    background-color: #ffd700;
-    border-radius: 50%;
 }
 
 .text-content p {
@@ -117,4 +164,16 @@ body {
     .text-content {
         padding-left: 0;
     }
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.center-title {
+    text-align: center;
+    margin-top: 20px
 }
