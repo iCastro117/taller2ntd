@@ -4,134 +4,237 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios - Deepuppy</title>
-    <link rel="stylesheet" href="servicios.css">
     <link rel="stylesheet" href="../../css/servicios.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-    <header>
-        <img src="../../assets/logo.png" alt="Deepuppy Logo" class="logo">
-        <ul class="nav-menu">
-            <li><a href="../../index.html">Inicio</a></li>
-            <li>
-                <a href="#">About Us</a>
-                <div class="submenu">
-                    <a href="aboutUs.html">About Us</a>
-                    <a href="equipo.html">Equipo</a>
-                </div>
-            </li>
-            <li>
-                <a href="#">Conclusiones</a>
-                <div class="submenu">
-                    <a href="conclusionesSalim.html">Conclusiones Salim</a>
-                    <a href="conclusionesMauricio.html">Conclusiones Mauricio</a>
-                    <a href="conclusionesIsabella.html">Conclusiones Isabella</a>
-                </div>
-            </li>
-            <li><a href="servicios.html">Services</a></li>
-            <li><a href="FQAs.html">QA</a></li>
-        </ul>
-    </header>
-
-    <main class="main-content">
-        <!-- Sección de Categorías de Entrenamiento -->
-        <h2 class="section-title">Categorías de Entrenamiento</h2>
-        <div class="training-categories">
-            <div class="category-card">
-                <h3>Observación</h3>
-                <p>Evaluación inicial detallada del comportamiento de tu mascota en su entorno natural.</p>
-            </div>
-            <div class="category-card">
-                <h3>Análisis del Comportamiento</h3>
-                <p>Estudio profundo de patrones de conducta y necesidades específicas.</p>
-            </div>
-            <div class="category-card">
-                <h3>Introducción</h3>
-                <p>Primeros pasos en el proceso de entrenamiento y familiarización.</p>
-            </div>
-            <div class="category-card">
-                <h3>Módulos de Entrenamiento</h3>
-                <p>Programas específicos adaptados a las necesidades de cada mascota.</p>
-            </div>
-            <div class="category-card">
-                <h3>Implementación</h3>
-                <p>Aplicación práctica de técnicas y métodos de entrenamiento.</p>
-            </div>
-            <div class="category-card">
-                <h3>Control y Evaluación</h3>
-                <p>Seguimiento continuo del progreso y ajustes necesarios.</p>
-            </div>
-        </div>
-
-        <!-- Sección de Productos -->
-        <h2 class="section-title">Alimentación para Mascotas</h2>
-        <div class="products-section">
-            <div class="products-grid">
-                <div class="product-card">
-                    <img src="../../assets/servicios/comidaGato.jpg" alt="Comida para Gatos">
-                    <h3>Premium Cat Food</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+<body class="bg-pattern">
+    <div class="page-wrapper">
+        <header class="site-header">
+            <div class="container">
+                <nav class="main-navigation" aria-label="Navegación principal">
+                    <div class="logo">
+                        <a href="../../index.html">
+                            <img src="../../assets/logo.png" alt="Deepuppy Logo" class="logo-img">
+                        </a>
                     </div>
-                    <p class="price">$45.99</p>
-                </div>
-                <div class="product-card">
-                    <img src="../../assets/servicios/comidaPerro.jpg" alt="Comida para Perros">
-                    <h3>Premium Dog Food</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="price">$52.99</p>
-                </div>
-                
+                    
+                    <button class="menu-toggle" aria-expanded="false" aria-controls="nav-menu">
+                        <i class="fas fa-bars"></i>
+                        <span class="sr-only">Menú</span>
+                    </button>
+                    
+                    <ul id="nav-menu" class="nav-menu">
+                        <li><a href="../../index.html">Inicio</a></li>
+                        <li class="has-submenu">
+                            <a href="#" aria-haspopup="true">About Us</a>
+                            <ul class="submenu">
+                                <li><a href="aboutUs.html">About Us</a></li>
+                                <li><a href="equipo.html">Equipo</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="#" aria-haspopup="true">Conclusiones</a>
+                            <ul class="submenu">
+                                <li><a href="conclusionesSalim.html">Conclusiones Salim</a></li>
+                                <li><a href="conclusionesMauricio.html">Conclusiones Mauricio</a></li>
+                                <li><a href="conclusionesIsabella.html">Conclusiones Isabella</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="servicios.html" aria-current="page">Services</a></li>
+                        <li><a href="FQAs.html">QA</a></li>
+                    </ul>
+                </nav>
             </div>
-        </div>
+        </header>
 
-        <!-- Sección de Planes -->
-        <h2 class="section-title">Planes de Servicio</h2>
-        <div class="service-plans">
-            <div class="plan-card">
-                <h3>Plan Básico</h3>
-                <p class="plan-price">$129</p>
-                <ul class="benefits-list">
-                    <li>2 Sesiones de entrenamiento</li>
-                    <li>Evaluación inicial</li>
-                    <li>Material de apoyo</li>
-                    <li>Seguimiento básico</li>
-                </ul>
-                <button class="read-more" data-modal="modal-basic">Read More</button>
+        <main class="main-content">
+            <section class="hero-section">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Nuestros <span class="highlight">Servicios</span></h1>
+                        <p class="hero-description">Descubre todo lo que podemos hacer por tu mascota con nuestros servicios profesionales y personalizados.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de Categorías de Entrenamiento -->
+            <section class="training-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Categorías de Entrenamiento</h2>
+                        <div class="section-decoration">
+                            <i class="fas fa-paw paw-icon"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="training-categories">
+                        <div class="category-card animate-item">
+                            <div class="card-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h3>Observación</h3>
+                            <p>Evaluación inicial detallada del comportamiento de tu mascota en su entorno natural.</p>
+                        </div>
+                        <div class="category-card animate-item">
+                            <div class="card-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>Análisis del Comportamiento</h3>
+                            <p>Estudio profundo de patrones de conducta y necesidades específicas.</p>
+                        </div>
+                        <div class="category-card animate-item">
+                            <div class="card-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h3>Introducción</h3>
+                            <p>Primeros pasos en el proceso de entrenamiento y familiarización.</p>
+                        </div>
+                        <div class="category-card animate-item">
+                            <div class="card-icon">
+                                <i class="fas fa-cubes"></i>
+                            </div>
+                            <h3>Módulos de Entrenamiento</h3>
+                            <p>Programas específicos adaptados a las necesidades de cada mascota.</p>
+                        </div>
+                        <div class="category-card animate-item">
+                            <div class="card-icon">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <h3>Implementación</h3>
+                            <p>Aplicación práctica de técnicas y métodos de entrenamiento.</p>
+                        </div>
+                        <div class="category-card animate-item">
+                            <div class="card-icon">
+                                <i class="fas fa-clipboard-check"></i>
+                            </div>
+                            <h3>Control y Evaluación</h3>
+                            <p>Seguimiento continuo del progreso y ajustes necesarios.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de Productos -->
+            <section class="products-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Alimentación para Mascotas</h2>
+                        <div class="section-decoration">
+                            <i class="fas fa-paw paw-icon"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="products-grid">
+                        <div class="product-card animate-item">
+                            <div class="product-image">
+                                <img src="../../assets/servicios/comidaGato.jpg" alt="Comida para Gatos">
+                            </div>
+                            <div class="product-info">
+                                <h3>Premium Cat Food</h3>
+                                <p class="price">$45.99</p>
+                            </div>
+                        </div>
+                        <div class="product-card animate-item">
+                            <div class="product-image">
+                                <img src="../../assets/servicios/comidaPerro.jpg" alt="Comida para Perros">
+                            </div>
+                            <div class="product-info">
+                                <h3>Premium Dog Food</h3>
+                                <p class="price">$52.99</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de Planes -->
+            <section class="plans-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Planes de Servicio</h2>
+                        <div class="section-decoration">
+                            <i class="fas fa-paw paw-icon"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="service-plans">
+                        <div class="plan-card animate-item">
+                            <div class="plan-badge">Básico</div>
+                            <h3>Plan Básico</h3>
+                            <p class="plan-price">$129</p>
+                            <ul class="benefits-list">
+                                <li>2 Sesiones de entrenamiento</li>
+                                <li>Evaluación inicial</li>
+                                <li>Material de apoyo</li>
+                                <li>Seguimiento básico</li>
+                            </ul>
+                            <button class="read-more" data-modal="modal-basic">Ver Detalles</button>
+                        </div>
+                        <div class="plan-card animate-item featured">
+                            <div class="plan-badge">Popular</div>
+                            <h3>Plan Intermedio</h3>
+                            <p class="plan-price">$229</p>
+                            <ul class="benefits-list">
+                                <li>4 Sesiones de entrenamiento</li>
+                                <li>Evaluación detallada</li>
+                                <li>Material personalizado</li>
+                                <li>Seguimiento semanal</li>
+                            </ul>
+                            <button class="read-more" data-modal="modal-intermediate">Ver Detalles</button>
+                        </div>
+                        <div class="plan-card animate-item">
+                            <div class="plan-badge">Premium</div>
+                            <h3>Plan Premium</h3>
+                            <p class="plan-price">$349</p>
+                            <ul class="benefits-list">
+                                <li>6 Sesiones de entrenamiento</li>
+                                <li>Evaluación completa</li>
+                                <li>Material premium</li>
+                                <li>Seguimiento diario</li>
+                            </ul>
+                            <button class="read-more" data-modal="modal-premium">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-info">
+                        <img src="../../assets/logo.png" alt="Logo de Doggie" class="footer-logo">
+                        <p>&copy; 2025 Doggie - Estética y Cuidado para Mascotas</p>
+                    </div>
+                    <nav class="footer-nav" aria-label="Navegación del pie de página">
+                        <div class="footer-links">
+                            <a href="../../index.html">Inicio</a>
+                            <a href="aboutUs.html">About Us</a>
+                            <a href="servicios.html">Services</a>
+                            <a href="FQAs.html">QA</a>
+                        </div>
+                    </nav>
+                    <div class="footer-social">
+                        <p class="social-title">Síguenos en redes</p>
+                        <div class="social-links">
+                            <a href="#" class="social-icon" aria-label="Facebook de Doggie">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Instagram de Doggie">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Twitter de Doggie">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="plan-card">
-                <h3>Plan Intermedio</h3>
-                <p class="plan-price">$129</p>
-                <ul class="benefits-list">
-                    <li>2 Sesiones de entrenamiento</li>
-                    <li>Evaluación detallada</li>
-                    <li>Material personalizado</li>
-                    <li>Seguimiento semanal</li>
-                </ul>
-                <button class="read-more" data-modal="modal-intermediate">Read More</button>
-            </div>
-            <div class="plan-card">
-                <h3>Plan Premium</h3>
-                <p class="plan-price">$129</p>
-                <ul class="benefits-list">
-                    <li>2 Sesiones de entrenamiento</li>
-                    <li>Evaluación completa</li>
-                    <li>Material premium</li>
-                    <li>Seguimiento diario</li>
-                </ul>
-                <button class="read-more" data-modal="modal-premium">Read More</button>
-            </div>
-        </div>
-    </main>
+        </footer>
+    </div>
 
     <!-- Modales para cada plan -->
     <div id="modal-basic" class="modal">
@@ -161,15 +264,15 @@
         <div class="modal-content">
             <button class="close-modal">&times;</button>
             <h2 class="modal-title">Plan Intermedio</h2>
-            <p class="modal-price">$129</p>
+            <p class="modal-price">$229</p>
             <div class="modal-description">
-                <p>El Plan Intermedio está diseñado para mascotas que necesitan un enfoque más detallado en su entrenamiento. Incluye dos sesiones intensivas con nuestros entrenadores certificados, quienes trabajarán en problemas específicos de comportamiento.</p>
+                <p>El Plan Intermedio está diseñado para mascotas que necesitan un enfoque más detallado en su entrenamiento. Incluye cuatro sesiones intensivas con nuestros entrenadores certificados, quienes trabajarán en problemas específicos de comportamiento.</p>
                 <p>Recomendado para mascotas con problemas moderados de comportamiento o para reforzar entrenamientos previos.</p>
             </div>
             <div class="modal-benefits">
                 <h4>Beneficios incluidos:</h4>
                 <ul>
-                    <li>2 Sesiones de entrenamiento de 60 minutos</li>
+                    <li>4 Sesiones de entrenamiento de 60 minutos</li>
                     <li>Evaluación detallada con informe escrito</li>
                     <li>Material personalizado impreso y digital</li>
                     <li>Seguimiento semanal durante un mes</li>
@@ -185,15 +288,15 @@
         <div class="modal-content">
             <button class="close-modal">&times;</button>
             <h2 class="modal-title">Plan Premium</h2>
-            <p class="modal-price">$129</p>
+            <p class="modal-price">$349</p>
             <div class="modal-description">
-                <p>Nuestro Plan Premium ofrece la experiencia más completa de entrenamiento para tu mascota. Con dos sesiones exclusivas con nuestros entrenadores senior, abordaremos cualquier problema de comportamiento y estableceremos rutinas efectivas.</p>
+                <p>Nuestro Plan Premium ofrece la experiencia más completa de entrenamiento para tu mascota. Con seis sesiones exclusivas con nuestros entrenadores senior, abordaremos cualquier problema de comportamiento y estableceremos rutinas efectivas.</p>
                 <p>Ideal para casos complejos o para quienes buscan la máxima atención y resultados garantizados.</p>
             </div>
             <div class="modal-benefits">
                 <h4>Beneficios incluidos:</h4>
                 <ul>
-                    <li>2 Sesiones de entrenamiento de 75 minutos</li>
+                    <li>6 Sesiones de entrenamiento de 75 minutos</li>
                     <li>Evaluación completa con plan personalizado</li>
                     <li>Kit premium de materiales y herramientas</li>
                     <li>Seguimiento diario durante dos semanas</li>
@@ -206,59 +309,7 @@
         </div>
     </div>
 
-    <script>
-        // Obtener todos los botones "Read More"
-        const readMoreButtons = document.querySelectorAll('.read-more');
-        
-        // Obtener todos los modales
-        const modals = document.querySelectorAll('.modal');
-        
-        // Obtener todos los botones de cierre
-        const closeButtons = document.querySelectorAll('.close-modal');
-        
-        // Función para abrir el modal
-        function openModal(modalId) {
-            const modal = document.getElementById(modalId);
-            modal.style.display = 'flex';
-            document.body.style.overflow = 'hidden'; // Evitar scroll en el fondo
-        }
-        
-        // Función para cerrar el modal
-        function closeModal() {
-            modals.forEach(modal => {
-                modal.style.display = 'none';
-            });
-            document.body.style.overflow = 'auto'; // Restaurar scroll
-        }
-        
-        // Asignar evento click a los botones "Read More"
-        readMoreButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                const modalId = this.getAttribute('data-modal');
-                openModal(modalId);
-            });
-        });
-        
-        // Asignar evento click a los botones de cierre
-        closeButtons.forEach(button => {
-            button.addEventListener('click', closeModal);
-        });
-        
-        // Cerrar el modal al hacer clic fuera del contenido
-        modals.forEach(modal => {
-            modal.addEventListener('click', function(event) {
-                if (event.target === this) {
-                    closeModal();
-                }
-            });
-        });
-        
-        // Cerrar el modal con la tecla Escape
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape') {
-                closeModal();
-            }
-        });
-    </script>
+    <script src="../../js/servicios.js"></script>
 </body>
 </html>
+
