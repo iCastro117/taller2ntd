@@ -5,55 +5,181 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deepuppy - About Us</title>
     <link rel="stylesheet" href="../../css/aboutUs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="../../assets/logo.png" alt="Logo de Doggie">
-            </div>
-            <ul class="nav-menu">
-                <li><a href="../../index.html">Inicio</a></li>
-                <li>
-                    <a href="#">About Us</a>
-                    <div class="submenu">
-                        <a href="aboutUs.html">About Us</a>
-                        <a href="equipo.html">Equipo</a>
+<body class="bg-pattern">
+    <div class="page-wrapper">
+        <header class="site-header">
+            <div class="container">
+                <nav class="main-navigation" aria-label="Navegación principal">
+                    <div class="logo">
+                        <a href="../../index.html">
+                            <img src="../../assets/logo.png" alt="Logo de Doggie" class="logo-img">
+                        </a>
                     </div>
-                </li>
-                <li>
-                    <a href="#">Conclusiones</a>
-                    <div class="submenu">
-                        <a href="conclusionesSalim.html">Conclusiones Salim</a>
-                        <a href="conclusionesMauricio.html">Conclusiones Mauricio</a>
-                        <a href="conclusionesIsabella.html">Conclusiones Isabella</a>
+                    
+                    <button class="menu-toggle" aria-expanded="false" aria-controls="nav-menu">
+                        <i class="fas fa-bars"></i>
+                        <span class="sr-only">Menú</span>
+                    </button>
+                    
+                    <ul id="nav-menu" class="nav-menu">
+                        <li><a href="../../index.html">Inicio</a></li>
+                        <li class="has-submenu">
+                            <a href="#" aria-haspopup="true" aria-current="page">About Us</a>
+                            <ul class="submenu">
+                                <li><a href="aboutUs.html">About Us</a></li>
+                                <li><a href="equipo.html">Equipo</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="#" aria-haspopup="true">Conclusiones</a>
+                            <ul class="submenu">
+                                <li><a href="conclusionesSalim.html">Conclusiones Salim</a></li>
+                                <li><a href="conclusionesMauricio.html">Conclusiones Mauricio</a></li>
+                                <li><a href="conclusionesIsabella.html">Conclusiones Isabella</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="servicios.html">Services</a></li>
+                        <li><a href="FQAs.html">QA</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <section class="hero-section">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Sobre <span class="highlight">Nosotros</span></h1>
+                        <p class="hero-description">Conoce nuestra historia y la pasión que nos impulsa a cuidar de tu mascota.</p>
                     </div>
-                </li>
-                <li><a href="servicios.html">Services</a></li>
-                <li><a href="FQAs.html">QA</a></li>
-            </ul>
-        </nav>
-        
-    </header>
-    <h1 class="center-title">About Us</h1>
-    <div class="content">
-        
-        <div class="image-container">
-            <div>
-                <img src="../../assets/aboutUs.jpg" alt="Cuidador con mascota" class="dog-image">
+                </div>
+            </section>
+            
+            <div class="container">
+                <div class="about-content">
+                    <div class="image-container animate-item">
+                        <div class="about-image-wrapper">
+                            <img src="../../assets/aboutUs.jpg" alt="Cuidador con mascota" class="dog-image">
+                            <div class="image-overlay"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-content">
+                        <h2 class="animate-item">Educamos con todo el corazón</h2>
+                        <div class="about-card animate-item">
+                            <div class="card-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <p>En Deepuppy, nuestra pasión por los animales nos llevó a crear un espacio donde perros y gatos reciban el mejor cuidado en un ambiente seguro y tranquilo. Creemos que cada mascota merece atención personalizada, por eso ofrecemos servicios especializados que garantizan su bienestar y comodidad.</p>
+                        </div>
+                        
+                        <div class="about-card animate-item">
+                            <div class="card-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <p>Nuestro compromiso es brindar una experiencia positiva tanto para las mascotas como para sus dueños, utilizando técnicas seguras y profesionales que priorizan la tranquilidad y seguridad de cada animal.</p>
+                        </div>
+                        
+                        <div class="about-card animate-item">
+                            <div class="card-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>Deepuppy nació con la misión de transformar el cuidado estético en un momento agradable y libre de estrés. Cada detalle de nuestro servicio está diseñado para fortalecer el vínculo entre las mascotas y sus familias, asegurando que cada visita sea especial.</p>
+                        </div>
+                        
+                        <div class="signature animate-item">
+                            <p>Fundadora</p>
+                            <p class="founder-name">Isabella Castro Camacho</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <section class="values-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Nuestros Valores</h2>
+                        <div class="section-decoration">
+                            <i class="fas fa-paw paw-icon"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="values-grid">
+                        <div class="value-card animate-item">
+                            <div class="value-icon">
+                                <i class="fas fa-hand-holding-heart"></i>
+                            </div>
+                            <h3>Cuidado Amoroso</h3>
+                            <p>Tratamos a cada mascota como si fuera nuestra, con paciencia, cariño y respeto.</p>
+                        </div>
+                        
+                        <div class="value-card animate-item">
+                            <div class="value-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h3>Excelencia</h3>
+                            <p>Nos esforzamos por ofrecer el mejor servicio posible, superando expectativas.</p>
+                        </div>
+                        
+                        <div class="value-card animate-item">
+                            <div class="value-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Comunidad</h3>
+                            <p>Creamos vínculos duraderos con nuestros clientes y sus mascotas.</p>
+                        </div>
+                        
+                        <div class="value-card animate-item">
+                            <div class="value-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3>Aprendizaje</h3>
+                            <p>Nos capacitamos constantemente para ofrecer las mejores técnicas y cuidados.</p>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </div>
+        </main>
         
-        <div class="text-content">
-            <h2>Educamos con todo el corazón</h2>
-            <p>En Deepuppy, nuestra pasión por los animales nos llevó a crear un espacio donde perros y gatos reciban el mejor cuidado en un ambiente seguro y tranquilo. Creemos que cada mascota merece atención personalizada, por eso ofrecemos servicios especializados que garantizan su bienestar y comodidad.</p>
-            <p>Nuestro compromiso es brindar una experiencia positiva tanto para las mascotas como para sus dueños, utilizando técnicas seguras y profesionales que priorizan la tranquilidad y seguridad de cada animal.</p>
-            <p>Deepuppy nació con la misión de transformar el cuidado estético en un momento agradable y libre de estrés. Cada detalle de nuestro servicio está diseñado para fortalecer el vínculo entre las mascotas y sus familias, asegurando que cada visita sea especial.</p>
-            <div class="signature">
-                <p>Fundadora</p>
-                <p class="founder-name">Isabella Castro Camacho</p>
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-info">
+                        <img src="../../assets/logo.png" alt="Logo de Doggie" class="footer-logo">
+                        <p>&copy; 2025 Doggie - Estética y Cuidado para Mascotas</p>
+                    </div>
+                    <nav class="footer-nav" aria-label="Navegación del pie de página">
+                        <div class="footer-links">
+                            <a href="../../index.html">Inicio</a>
+                            <a href="aboutUs.html">About Us</a>
+                            <a href="equipo.html">Equipo</a>
+                            <a href="servicios.html">Services</a>
+                            <a href="FQAs.html">QA</a>
+                        </div>
+                    </nav>
+                    <div class="footer-social">
+                        <p class="social-title">Síguenos en redes</p>
+                        <div class="social-links">
+                            <a href="#" class="social-icon" aria-label="Facebook de Doggie">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Instagram de Doggie">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Twitter de Doggie">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </footer>
     </div>
+
+    <script src="../../js/aboutUs.js"></script>
 </body>
 </html>
+
