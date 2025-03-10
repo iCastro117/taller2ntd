@@ -13,12 +13,14 @@
     --accent: #FAEB3E;
     --accent-light: #FBDE00;
     --white: #ffffff;
+    --gray-light: #f5f5f5;
+    --gray: #e0e0e0;
     --text-dark: #333333;
     --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 body {
-    background: var(--primary);
+    background: var(--white);
     color: var(--text-dark);
     line-height: 1.6;
 }
@@ -55,6 +57,10 @@ header {
     font-weight: 500;
 }
 
+.nav-menu a:hover {
+    color: var(--white);
+}
+
 .submenu {
     display: none;
     position: absolute;
@@ -81,11 +87,24 @@ header {
 
 /* Títulos de sección */
 .section-title {
-    color: var(--accent);
+    color: var(--primary-dark);
     font-size: 2rem;
     margin-bottom: 2rem;
     text-align: center;
     font-weight: 700;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--accent-light);
 }
 
 /* Sección de categorías de entrenamiento */
@@ -97,11 +116,12 @@ header {
 }
 
 .category-card {
-    background-color: var(--white);
+    background-color: var(--gray-light);
     padding: 1.8rem;
     border-radius: 8px;
     box-shadow: var(--shadow);
     color: var(--text-dark);
+    border-left: 4px solid var(--primary);
 }
 
 .category-card h3 {
@@ -125,7 +145,7 @@ header {
 }
 
 .product-card {
-    background-color: var(--white);
+    background-color: var(--gray-light);
     padding: 1.8rem;
     border-radius: 8px;
     box-shadow: var(--shadow);
@@ -146,6 +166,7 @@ header {
     object-fit: cover;
     border-radius: 6px;
     margin-bottom: 1rem;
+    border: 1px solid var(--gray);
 }
 
 .price {
@@ -163,7 +184,7 @@ header {
 }
 
 .plan-card {
-    background-color: var(--white);
+    background-color: var(--gray-light);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: var(--shadow);
@@ -206,14 +227,18 @@ header {
 }
 
 .read-more {
-    background-color: var(--accent-light);
-    color: var(--primary-dark);
+    background-color: var(--primary);
+    color: var(--white);
     border: none;
     padding: 0.8rem 1.8rem;
     border-radius: 4px;
     cursor: pointer;
     font-weight: 600;
     font-size: 1rem;
+}
+
+.read-more:hover {
+    background-color: var(--primary-dark);
 }
 
 /* Estilos para el modal */
@@ -281,7 +306,7 @@ header {
 
 .modal-benefits {
     margin-bottom: 1.5rem;
-    background-color: #f9f9f9;
+    background-color: var(--gray-light);
     padding: 1.5rem;
     border-radius: 6px;
 }
