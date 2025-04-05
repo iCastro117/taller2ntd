@@ -1,0 +1,22 @@
+{
+    "name": "taller2ntd",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^3.1.9"
+    },
+    "dependencies": {
+        "express": "^4.21.2",
+        "next": "^15.2.1",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0"
+    }
+}
